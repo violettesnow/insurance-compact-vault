@@ -8,12 +8,31 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background-color: #f4f7f6; color: #2c3e50; }
         .vault-header { background: #2c3e50; color: white; padding: 30px; border-radius: 12px; text-align: center; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .status-badge { background: #27ae60; color: white; padding: 6px 15px; border-radius: 20px; font-size: 0.85em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Navigation Styles */
         .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); margin-bottom: 20px; }
         h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; color: #34495e; }
         ul { list-style: none; padding: 0; }
-        li { margin-bottom: 15px; padding: 10px; border-radius: 8px; background: #f9f9f9; transition: 0.2s; border: 1px solid #eee; }
-        li:hover { background: #f0f4f8; transform: translateX(5px); }
-        a { color: #2980b9; text-decoration: none; font-weight: 500; display: block; width: 100%; }
+        
+        /* Making the List Items look like buttons/links */
+        li { margin-bottom: 10px; }
+        .nav-link { 
+            display: block; 
+            background: #f9f9f9; 
+            padding: 12px 15px; 
+            border-radius: 8px; 
+            border: 1px solid #eee; 
+            text-decoration: none; 
+            color: #2980b9; 
+            font-weight: 500; 
+            transition: all 0.2s ease; 
+        }
+        .nav-link:hover { 
+            background: #eef2f7; 
+            transform: translateX(5px); 
+            border-color: #2980b9; 
+        }
+
         .btn { display: inline-block; background: #e74c3c; color: white; padding: 18px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 20px; transition: 0.3s; box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3); }
         .btn:hover { background: #c0392b; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(231, 76, 60, 0.4); }
         .footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #95a5a6; }
@@ -27,19 +46,23 @@
     </div>
 
     <div class="card">
-        <h2>Regulatory Resources</h2>
+        <h2>Navigation</h2>
         <ul>
-            <li><a href="#ltc">📊 2024 LTC Table & Strategic Notes</a></li>
-            <li><a href="#roundtable">📝 DC Roundtable Executive Summary</a></li>
-            <li><a href="#georgia">⚖️ Georgia Compliance Guidelines</a></li>
-            <li><a href="https://t.me/InssuScoutBot">💬 Contact Official Support Agent</a></li>
+            <li><a href="#ltc" class="nav-link">📊 2024 LTC Table</a></li>
+            <li><a href="#roundtable" class="nav-link">📝 DC Roundtable Notes</a></li>
+            <li><a href="#georgia" class="nav-link">⚖️ Georgia Compliance</a></li>
+            <li><a href="https://t.me/InssuScoutBot" class="nav-link">💬 Contact Support</a></li>
         </ul>
     </div>
 
-    <div class="card" style="text-align: center;">
-        <h3>GA 2026 Audit Access</h3>
-        <p>Click below to launch the automated Support Agent for real-time TSI_ORG data queries.</p>
-        <a href="https://t.me/InssuScoutBot" class="btn">🚀 Launch Vault Support</a>
+    <div class="card">
+        <h2>Insurance Compact Regulatory Vault</h2>
+        <p>Welcome to the central repository for insurance compliance. This vault tracks the 2026 Georgia insurance rate changes and stacking shifts.</p>
+        <h3>2024 LTC Table & Strategic Notes</h3>
+        <p>Data synchronized from the <i>May 2024 DC Roundtable</i> session.</p>
+        <div style="text-align: center;">
+            <a href="https://t.me/InssuScoutBot" class="btn">🚀 Launch Vault Support</a>
+        </div>
     </div>
 
     <div class="footer">
