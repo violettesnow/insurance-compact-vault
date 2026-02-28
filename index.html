@@ -2,42 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsuScout Regulatory Vault</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; display: flex; margin: 0; background: #f0f2f5; }
-        .sidebar { width: 280px; background: #1a365d; color: white; height: 100vh; padding: 25px; position: fixed; box-sizing: border-box; }
-        .main { margin-left: 280px; flex: 1; padding: 40px; }
-        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 25px; border: 1px solid #e1e4e8; }
-        h1 { color: #1a365d; margin: 0 0 10px 0; }
-        .badge { background: #28a745; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background-color: #f4f7f6; color: #2c3e50; }
+        .vault-header { background: #2c3e50; color: white; padding: 30px; border-radius: 12px; text-align: center; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .status-badge { background: #27ae60; color: white; padding: 6px 15px; border-radius: 20px; font-size: 0.85em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 0; color: #34495e; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 15px; padding: 10px; border-radius: 8px; background: #f9f9f9; transition: 0.2s; border: 1px solid #eee; }
+        li:hover { background: #f0f4f8; transform: translateX(5px); }
+        a { color: #2980b9; text-decoration: none; font-weight: 500; display: block; width: 100%; }
+        .btn { display: inline-block; background: #e74c3c; color: white; padding: 18px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 20px; transition: 0.3s; box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3); }
+        .btn:hover { background: #c0392b; transform: translateY(-2px); box-shadow: 0 6px 15px rgba(231, 76, 60, 0.4); }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.8em; color: #95a5a6; }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>InsuScout Vault</h2>
-        <p><span class="badge">GA 2026 ACTIVE</span></p>
-        <hr style="opacity: 0.3;">
-        <p><strong>Navigation</strong></p>
-        <ul style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 12px;">📊 2024 LTC Table</li>
-            <li style="margin-bottom: 12px;">📝 DC Roundtable Notes</li>
-            <li style="margin-bottom: 12px;">⚖️ Georgia Compliance</li>
-                    <li style="margin-top: 25px;"><a href="https://t.me/YOUR_BOT_USERNAME" style="background: #0088cc; color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 0.9em;">💬 Contact Support</a></li>
+
+    <div class="vault-header">
+        <h1>InsuScout Regulatory Vault</h1>
+        <p>System Status: <span class="status-badge">GA 2026 ACTIVE</span></p>
+    </div>
+
+    <div class="card">
+        <h2>Regulatory Resources</h2>
+        <ul>
+            <li><a href="#ltc">📊 2024 LTC Table & Strategic Notes</a></li>
+            <li><a href="#roundtable">📝 DC Roundtable Executive Summary</a></li>
+            <li><a href="#georgia">⚖️ Georgia Compliance Guidelines</a></li>
+            <li><a href="https://t.me/InssuScoutBot">💬 Contact Official Support Agent</a></li>
         </ul>
     </div>
-    <div class="main">
-        <div class="card">
-            <h1>Insurance Compact Regulatory Vault</h1>
-            <p>Welcome to the central repository for insurance compliance. This vault tracks the 2026 Georgia insurance rate changes and stacking shifts.</p>
-        </div>
-        <div class="card">
-            <h3>2024 LTC Table & Strategic Notes</h3>
-            <p>Data synchronized from the <strong>May 2024 DC Roundtable</strong> session.</p>
-        </div>
+
+    <div class="card" style="text-align: center;">
+        <h3>GA 2026 Audit Access</h3>
+        <p>Click below to launch the automated Support Agent for real-time TSI_ORG data queries.</p>
+        <a href="https://t.me/InssuScoutBot" class="btn">🚀 Launch Vault Support</a>
     </div>
+
+    <div class="footer">
+        <p>© 2026 InsuScout Regulatory Affairs | Secured Environment</p>
+    </div>
+
 </body>
 </html>
-
-
-
-
-    <a href="https://t.me/InssuScoutBot" class="btn">🚀 Launch Vault Support</a>
