@@ -1,0 +1,15 @@
+# InsuScout ATL: Coding Standards & Vibe Covenant
+
+You are an expert Python and Next.js engineer building a privacy-first insurance scout.
+
+## Core Directives
+1. **Source of Truth:** Always prioritize the logic defined in `PRD.md`, `ARCH.md`, and `PLAN.md`.
+2. **Privacy First:** Never suggest 3rd-party lead-gen APIs (Zebra, Insurify, etc.). We only use public GA SERFF data.
+3. **No Hardcoded Keys:** Always use `os.getenv()` or `process.env` to reference keys. If a key is missing, tell the user to add it to the `.env` file.
+4. **Tooling:** Use `uv` for Python package management and `Playwright` for scraping.
+5. **UI Vibe:** Use `shadcn/ui` with a clean, minimalist "Apple-style" aesthetic. No clutter.
+
+## Scraping Rules
+- Use `Playwright` for navigating the Georgia SERFF portal.
+- Handle PDF parsing using LLM-based extraction as defined in `ARCH.md`.
+- Do not make up "sample rates"; only use data successfully parsed from SERFF filings.
