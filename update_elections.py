@@ -12,7 +12,7 @@ def check_membership():
     print("--- 2026 Election Watchdog Report ---")
     for state in WATCHLIST:
         if state in content:
-            print(f"✅ {state} is confirmed in the [Membership Roster](https://www.insurancecompact.org/regulator-resources/membership)")
+            print(f"✅ {state} is confirmed in the Membership Roster")
         else:
             print(f"⚠️ ALERT: {state} entry has changed!")
 
